@@ -45,7 +45,7 @@ module.exports.loop = function () {
             {memory: {role: 's2harvester'}});        
     }
     
-    if(builders.length < 2) {
+    if(builders.length < 3) {
         var newName = 'Builder' + Game.time;
         console.log('Attempting to spawn new builder: ' + newName);
         Game.spawns['Spawn'].spawnCreep([WORK, CARRY, CARRY, MOVE, MOVE], newName, 
